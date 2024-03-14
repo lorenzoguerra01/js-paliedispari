@@ -4,8 +4,16 @@
 
 let elBtnPali = document.getElementById("btn-pali")
 
-elBtnPali.addEventListener("click", function() {
-
+elBtnPali.addEventListener("click", function () {
+    let word
+    do {
+        word = prompt("Inserire una parola")
+    } while (!isNaN(word))
+    if (isPalindrome(word)) {
+        reply.innerHTML= "La parola inserita è palindroma"
+    } else {
+        reply.innerHTML= "La parola inserita non è palindroma"
+    }
 })
 
 
@@ -21,6 +29,6 @@ elBtnPali.addEventListener("click", function() {
 
 let elBtnEvenOdd = document.getElementById("btn-even-odd")
 
-elBtnEvenOdd.addEventListener("click", function() {
-    
+elBtnEvenOdd.addEventListener("click", function () {
+
 })
