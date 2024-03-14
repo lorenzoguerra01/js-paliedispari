@@ -11,15 +11,12 @@ elBtnPali.addEventListener("click", function () {
     } while (!isNaN(word))
     if (isPalindrome(word)) {
         reply.innerHTML= "La parola inserita è palindroma"
+        reply.className = "text-success"
     } else {
         reply.innerHTML= "La parola inserita non è palindroma"
+        reply.className = "text-danger"
     }
 })
-
-
-
-
-
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
