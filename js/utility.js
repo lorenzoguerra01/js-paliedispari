@@ -13,7 +13,7 @@ function isPalindrome(str) { /*nik method */
     } else {
         return false;
     }
-} 
+}
 function isPalindrome(str) { /*w3c method */
     // Remove non-alphanumeric characters and convert to lowercase
     str = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
@@ -30,6 +30,17 @@ function isPalindrome(str) { /*w3c method */
 }
 function isPalindrome(str) { /*AI method */
     return str === str.split('').reverse().join('');
+}
+function isNumberInRange(number, num1, num2) {
+    return number >= num1 && number <= num2;
+}
+function isEven(number) {
+    if (number % 2 === 0) {
+        number = "pari"
+    } else {
+        number = "dispari"
+    }
+    return number
 }
 // global variables 
 
